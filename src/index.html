@@ -1,112 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-<body>
-        <div class="container">
-            <div class="row">
-                <div class="col-8 bg-light mx-auto mt-5 pt-3 rounded border border-light">
-                    <h5>Payment form example</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-8 bg-white mx-auto  rounded border border-light">
-                    <div class="alert alert-danger mt-4" role="alert">
-                        A simple danger alert—check it out!
-                        Some files are missing!
-                      </div>
-                      <form class="mt-5">
-                        <div class="row">
-                          <div class="col-4 form-floating mb-3" >
-                            <label class="ml-2" for="cardNumber">Card #</label>
-                            <input type="password" class="form-control" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx">
-                          </div>
 
-                          <div class="col-2">
-                            <label for="cvv">CVV</label>
-                            <input type="password" class="form-control" id="cvv" placeholder="xxxx">
-
-                          </div>
-
-                          <div class="col-6" >
-                            <label for="cvv"> Amount</label>
-                            <input type="text" class="form-control" id="amount" placeholder="Amount">
-                            </div>
-                        </div>
-                      </form>
-                      <form>
-                        <div class="form-row">
-                          <div class="col-md-6 mb-3">
-                            <label for="validationDefault01">First name</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-                          </div>
-                          <div class="col-md-6 mb-3">
-                            <label for="validationDefault02">Last name</label>
-                            <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
-                          </div>
-                        </div>
-                        <div class="form-row">
-                          <div class="col-md-6 mb-3">
-                            <label for="validationDefault03">City</label>
-                            <input type="text" class="form-control" id="validationDefault03" required>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <label for="validationDefault04">State</label>
-                            <select class="custom-select" id="validationDefault04" required>
-                              <option selected disabled value="">Choose...</option>
-                              <option>...</option>
-                            </select>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <label for="validationDefault05">Zip</label>
-                            <input type="text" class="form-control" id="validationDefault05" required>
-                          </div>
-                          <div class=" mt-3 ml-3" >
-                            <p class="mr-3"> We accept:</p>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1"><i class="fa fa-cc-visa" style="font-size:24px"></i></label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2"><i class="fa fa-cc-amex" style="font-size:24px"></i></label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                            <label class="form-check-label" for="inlineRadio1"><i class="fa fa-cc-mastercard" style="font-size:24px"></i></label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio" value="option4">
-                            <label class="form-check-label" for="inlineRadio1"><i class="fa fa-cc-paypal" style="font-size:24px"></i></label>
-                          </div>
-                        </div>
-                          <div class="form-group ml-auto mt-4">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control px-5" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            <span class="h6 text-black-50">Add any notes here.</span>
-                          </div>
-                        </div>
-                       
-                        </div>
-                      </form>
-                      
-                </div>
-                <div class="row">
-                  <div class="col-8 bg-white mx-auto  pt-3 border border-light">
-                    <div class=" col-3 d-flex ml-auto mb-3">
-                    <button type="button" class=" mr-4 btn btn-secondary btn-sm">Cancel</button>
-                    <button type="button" class=" mr-3 btn btn-primary btn-sm">Send</button>
-                  </div>
-                  </div>
-            </div>
-            
+  <body>
+    <form id="form1" class="container">
+      <div class="row">
+        <div
+          class="col-8 bg-light mx-auto mt-5 pt-3 rounded border border-light"
+        >
+          <h5>Payment form example</h5>
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-</body>
+      </div>
+      <div class="row">
+        <div class="col-8 bg-white mx-auto rounded border border-light">
+          <div id="alert1" class="alert alert-danger mt-4" hidden role="alert">
+            Some fields are missing!
+          </div>
+
+          <div class="row">
+            <div class="col-4  mb-3">
+              <label class="ml-2" for="cardNumber">Card #</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cardNumber"
+                placeholder="xxxx xxxx xxxx xxxx"
+              />
+              <label id="cardNumberError" class="text-danger"></label>
+            </div>
+
+            <div class="col-2">
+              <label for="cvv">CVV</label>
+              <input
+                type="password"
+                class="form-control"
+                id="cvv"
+                placeholder="xxxx"
+              />
+              <label id="cvvError" class="text-danger"></label>
+            </div>
+
+            <div class="col-6">
+              <label for="amount"> Amount</label>
+              <input
+                type="text"
+                class="form-control"
+                id="amount"
+                placeholder="Amount"
+              />
+              <label id="amountError" class="text-danger"></label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault01">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault01"
+                value="Mark"
+              />
+              <label id="validationDefault01Error" class="text-danger"></label>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault02">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault02"
+                value="Otto"
+              />
+              <label id="validationDefault02Error" class="text-danger"></label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault03">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault03"
+              />
+              <label id="validationDefault03Error" class="text-danger"></label>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationDefault04">State</label>
+              <select class="custom-select" id="validationDefault04">
+                <option selected disabled value="">Choose...</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+              <label id="validationDefault04Error" class="text-danger"></label>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <label for="validationDefault05">Zip</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault05"
+              />
+              <label id="validationDefault05Error" class="text-danger"></label>
+            </div>
+            <div class=" mt-3 ml-3">
+              <p class="mr-3">We accept:</p>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  ><i class="fa fa-cc-visa" style="font-size:24px"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  ><i class="fa fa-cc-amex" style="font-size:24px"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="inlineRadio3"
+                  ><i class="fa fa-cc-mastercard" style="font-size:24px"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio4"
+                  value="option4"
+                />
+                <label class="form-check-label" for="inlineRadio4"
+                  ><i class="fa fa-cc-paypal" style="font-size:24px"></i
+                ></label>
+              </div>
+            </div>
+            <div class="form-group ml-auto mt-4">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea
+                class="form-control px-5"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+              <span class="h6 text-black-50">Add any notes here.</span>
+              <label
+                id="exampleFormControlTextarea1Error"
+                class="text-danger"
+              ></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8 bg-white mx-auto pt-3 border border-light">
+          <div class=" col-3 d-flex ml-auto mb-3">
+            <button type="button" class=" mr-4 btn btn-secondary btn-sm">
+              Cancel
+            </button>
+            <button type="submit" class=" mr-3 btn btn-primary btn-sm">
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="form-validation.js"></script>
+  </body>
 </html>
